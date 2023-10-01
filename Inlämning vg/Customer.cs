@@ -12,20 +12,20 @@ namespace Inlämning_vg
         // Fields
         protected string _username;
         private string _password;
-        protected List<Products> _usercart;
+        protected List<Product> _usercart;
 
         //Properties
         public string UserName
         { 
             get { return _username; } 
-             
+            
         }
         public string Password
         {
             get { return _password; }
             set { _password = value; } 
         }
-        public List<Products> UserCart
+        public List<Product> UserCart
         {
             get { return _usercart; }
             set { _usercart = value; }

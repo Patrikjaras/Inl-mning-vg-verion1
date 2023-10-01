@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Inlämning_vg
 {
-    internal class Products
+    internal class Product
     {
         //fields
         private string _name;
         private double _price;
-        private static List<Products> _allproducts = new List<Products>();
+        private static List<Product> _allproducts = new List<Product>();
 
         //Constructor
-        public Products(string name, double price)
+        public Product(string name, double price)
         {
             Name = name;
             Price = price;
@@ -30,7 +30,7 @@ namespace Inlämning_vg
             get { return _price; }
             set { _price = value; }
         }
-        public static List<Products> AllProducts
+        public static List<Product> AllProducts
         {
             get { return _allproducts; }
             set { _allproducts = value; }
@@ -46,9 +46,9 @@ namespace Inlämning_vg
       }
         public static void InitializeProducts()
         {
-            AllProducts.Add(new Products("Apple", 9));
-            AllProducts.Add(new Products("Fish", 69));
-            AllProducts.Add(new Products("Coca Cola Zero", 10));
+            AllProducts.Add(new Product("Apple", 9));
+            AllProducts.Add(new Product("Fish", 69));
+            AllProducts.Add(new Product("Coca Cola Zero", 10));
         }
       
         
